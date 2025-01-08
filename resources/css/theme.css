@@ -73,6 +73,22 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4 {
+    font-size: var(--h4-size);
+}
+
 @media (min-width: 992px) {
     .container-lg {
         max-width: inherit;
@@ -318,6 +334,25 @@ input[type="search"] {
     border-bottom-right-radius: var(--bs-border-radius);
 }
 
+[dir] .wt-tab-relatives .wt-facts-table tr:first-child .wt-chart-box {
+    border-top-right-radius: var(--bs-border-radius);
+}
+
+[dir] .wt-tab-relatives .wt-facts-table tr:not(:first-child) .wt-chart-box {
+    border-top: none;
+}
+
+[dir] .wt-tab-relatives .wt-facts-table .wt-chart-box {
+    border-left: none;
+    padding: var(--base-size-4);
+}
+
+[dir] .wt-chart-box .wt-chart-box-dropdown {
+    background-color: var(--bs-dropdown-bg);
+    border: var(--borderWidth-thin) solid var(--borderColor-muted);
+    border-radius: var(--borderRadius-large);
+}
+
 table {
     border-color: var(--bs-border-color);
     border-spacing: 2px;
@@ -360,13 +395,13 @@ table {
     border-color: var(--bs-border-color);
 }
 
-[dir] .wt-chart-box-m, [dir] .wt-chart-box-m .wt-chart-box-dropdown {
+[dir] .wt-chart-box-m {
     background: var(--bs-body-bg);
     background: var(--sex-m-bg);
     border-color: var(--bs-border-color);
 }
 
-[dir] .wt-chart-box-f, [dir] .wt-chart-box-f .wt-chart-box-dropdown {
+[dir] .wt-chart-box-f {
     background: var(--bs-body-bg);
     background: var(--sex-f-bg);
     border-color: var(--bs-border-color);
@@ -473,11 +508,21 @@ a.btn.btn-outline-secondary:hover {
 [dir] .btn.btn-link {
     --bs-btn-bg: transparent;
     --bs-btn-hover-bg: var(--control-transparent-bgColor-hover);
-    font-size: var(--base-size-16);
 }
 
-[dir] a.btn.btn-link:hover {
-    color: var(--link-color);
+[dir] .btn.btn-link:hover {
+    color: var(--link-color-hover);
+    background-color: transparent;
+}
+
+[dir] .wt-block-header .btn-link {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.wt-block-header {
+    height: 2.5rem;
+    align-content: center;
 }
 
 [dir] span.twitter-typeahead .tt-dropdown-menu, [dir] span.twitter-typeahead .tt-menu {
@@ -553,4 +598,29 @@ input {
 [dir] #cboxClose:hover, [dir] #cboxNext:hover, [dir] #cboxPrevious:hover, [dir] #cboxSlideshow:hover {
     background-color: var(--button-default-bgColor-hover);
     border-radius: var(--borderRadius-medium);
+}
+
+.wt-chart-relationships .wt-chart-box {
+    width: 20rem;
+}
+
+[dir] .list_value {
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
+    border-radius: var(--borderRadius-medium);
+    background-color: var(--bs-body-bg);
+}
+
+input[type="text"] {
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
+    border-radius: var(--borderRadius-medium);
+    background-color: var(--bgColor-muted);
+}
+
+[dir] .wt-calendar-month .wt-page-options-label, [dir] .wt-calendar-month .wt-page-options-value {
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
+}
+
+[dir] .wt-ajax-load:empty {
+    background-image: var(--spinner);
+    height: var(--base-size-36);
 }
