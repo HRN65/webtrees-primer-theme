@@ -119,6 +119,10 @@
     --content: "\f0e8";
 }
 
+.wt-tabs-individual a.nav-link[href="#_vytux_cousins_"]::before {
+    --content: "\f0e8";
+}
+
 /* Individual/family icons */
 
 .wt-icon-individual::before, .wt-icon-family::before {
