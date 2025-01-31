@@ -661,7 +661,7 @@ input[type="text"] {
 
 .icon-silhouette-m, .icon-silhouette-f {
     /* height: 4.5rem; */
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
     width: 37px;
 }
 
